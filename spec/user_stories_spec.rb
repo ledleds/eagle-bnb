@@ -15,4 +15,10 @@ feature 'Testing infrastructure' do
     expect(User.first.email).to eq 'terry@eagle.com'
     expect(page).to have_content 'Welcome new user!'
   end
+
+  scenario 'user cannot sign up without entering an email' do
+    expect {sign_up(email:nil)}.not_to change(User, :count)
+    expect(page).to have_content('Email must not be blank')
+  end
+
 end

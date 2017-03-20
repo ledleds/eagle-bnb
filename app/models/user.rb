@@ -7,7 +7,7 @@ class User
   property :id, Serial
   property :username, String
   property :name, String
-  property :email, String
+  property :email, String, required: true
   property :password, Text
   property :password_confirmation, Text
 

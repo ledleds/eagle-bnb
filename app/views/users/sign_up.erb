@@ -17,3 +17,7 @@
 
   <input type= 'submit' value = 'Sign up!'>
 </form>
+
+<% if flash[:notice] %>
+ <div id='notice'><%= flash[:notice] %></div>
+<% end %>

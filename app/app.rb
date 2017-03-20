@@ -1,7 +1,10 @@
 require 'sinatra/base'
 require_relative 'models/user'
+require 'sinatra/flash'
 
 class MakersBnB < Sinatra::Base
+
+register Sinatra::Flash
 
   get '/' do
     erb :'users/index'
@@ -17,7 +20,13 @@ class MakersBnB < Sinatra::Base
                         email: params[:email],
                         password: params[:password],
                         password_confirmation: params[:password_confirmation])
-    redirect '/users'
+    if @user.save
+      session[:user_id] = @user.id
+      redirect '/users'
+    else
+      flash.now[:notice] = "Email must not be blank"
+      erb :'users/sign_up'
+    end
   end
 
   get '/users' do
