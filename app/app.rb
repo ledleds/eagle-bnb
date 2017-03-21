@@ -1,6 +1,8 @@
 require 'sinatra/base'
+require_relative 'models/user'
+require_relative 'models/space'
 require 'sinatra/flash'
-require_relative 'datamapper_setup'
+
 
 class MakersBnB < Sinatra::Base
 
@@ -35,3 +37,5 @@ register Sinatra::Flash
 
   run! if app_file == $0
 end
+
+require_relative './controllers/spaces'

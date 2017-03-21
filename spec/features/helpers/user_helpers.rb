@@ -8,3 +8,17 @@ def sign_up(username: 'terryeagle', name: 'Terry', email: 'terry@eagle.com', pas
   fill_in :password_confirmation, with: password_confirmation
   click_button 'Sign up!'
 end
+
+def click_list_space
+  visit('/')
+  click_link 'List Space'
+end
+
+def list_space(title: 'The Crows Nest', description: 'Cosy cottage in the heart of Devon', price: 65, date_from: 'Jan', date_to: 'Feb')
+  fill_in :title, with: title
+  fill_in :description, with: description
+  fill_in :price, with: price
+  fill_in :date_from, with: date_to
+  fill_in :date_to, with: date_from
+  click_button 'List my space'
+end

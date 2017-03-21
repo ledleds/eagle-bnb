@@ -5,6 +5,9 @@ require File.join(File.dirname(__FILE__), '..', 'app/app.rb')
 
 require 'capybara'
 require 'capybara/rspec'
+require 'rspec'
+require './app/models/user'
+require './app/app'
 require 'features/helpers/user_helpers'
 require 'database_cleaner'
 
@@ -47,8 +50,6 @@ RSpec.configure do |config|
       config.after(:each) do
         DatabaseCleaner.clean
       end
-
-  config.include Capybara::DSL
 
   config.expect_with :rspec do |expectations|
     # This option will default to `true` in RSpec 4. It makes the `description`
