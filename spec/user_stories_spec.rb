@@ -43,7 +43,7 @@ feature 'Testing infrastructure' do
     expect(page).to have_content('Password does not match the confirmation')
   end
 
-  scenario 'sign up fails if password confirmation is incorrect' do
+   scenario 'sign up fails if password confirmation is incorrect' do
     expect {sign_up(password_confirmation: '1234')}.not_to change(User, :count)
     expect(page).to have_content('Password does not match the confirmation')
   end
