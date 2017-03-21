@@ -9,6 +9,22 @@ def sign_up(username: 'terryeagle', name: 'Terry', email: 'terry@eagle.com', pas
   click_button 'Sign up!'
 end
 
+def sign_in(username: 'terryeagle', password: 'test')
+  visit '/'
+  click_link 'Sign In'
+  fill_in :username, with: username
+  fill_in :password, with: password
+  click_button 'Sign In!'
+end
+
+def create_user
+  User.create(name: 'Terry',
+      username: 'terryeagle',
+      email: 'terry@eagle.com',
+      password: 'test',
+      password_confirmation: 'test')
+end
+
 def click_list_space
   visit('/')
   click_link 'List Space'
