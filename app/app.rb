@@ -2,7 +2,7 @@ require 'sinatra/base'
 require 'sinatra/flash'
 require_relative 'models/user'
 require_relative 'models/space'
-
+require_relative './datamapper_setup'
 
 
 class MakersBnB < Sinatra::Base

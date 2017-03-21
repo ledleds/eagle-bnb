@@ -10,8 +10,6 @@ class MakersBnB < Sinatra::Base
                         price: params[:price],
                         date_from: params[:date_from],
                         date_to: params[:date_to])
-
-    @space.save
     redirect '/confirmation'
   end
 
@@ -19,6 +17,15 @@ class MakersBnB < Sinatra::Base
     erb :confirmation
   end
 
+  get '/spaces' do
+    @spaces = Space.all
+    erb :spaces
+  end
 
-  run! if app_file == $0
+  get '/request' do
+    erb :request
+  end
+
+
+  # run! if app_file == $0
 end

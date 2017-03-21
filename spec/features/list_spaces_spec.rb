@@ -18,5 +18,9 @@ feature 'Listing Spaces' do
     expect(Space.first.title).to eq 'The Crows Nest'
   end
 
-
+  scenario 'user can list a space and see listings' do
+    list_space
+    click_link 'See Spaces'
+    expect(page).to have_content 'The Crows Nest'
+  end
 end
