@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require_relative 'models/user'
+require_relative 'models/space'
 require 'sinatra/flash'
 
 
