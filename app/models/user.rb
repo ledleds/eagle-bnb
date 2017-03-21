@@ -5,9 +5,9 @@ class User
   include DataMapper::Resource
 
   property :id, Serial
-  property :username, String, required: true
+  property :username, String, required: true, unique: true
   property :name, String
-  property :email, String, required: true
+  property :email, String, required: true, unique: true
   property :password, Text
   property :password_confirmation, Text
 

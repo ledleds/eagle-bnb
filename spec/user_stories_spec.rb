@@ -26,4 +26,10 @@ feature 'Testing infrastructure' do
     expect(page).to have_content('Username must not be blank')
   end
 
+  scenario 'sign up fails with an existing username' do
+    sign_up(username: 'terry', email: "b@a.com")
+    expect {sign_up(username: 'terry', email: "c@s.com")}.not_to change(User, :count)
+    expect(page).to have_content('Username is already taken')
+  end
+
 end
