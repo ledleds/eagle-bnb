@@ -18,7 +18,7 @@ def list_space(title: 'The Crows Nest', description: 'Cosy cottage in the heart 
   fill_in :title, with: title
   fill_in :description, with: description
   fill_in :price, with: price
-  fill_in :date_from, with: date_to
-  fill_in :date_to, with: date_from
+  fill_in :date_from, with: date_from
+  fill_in :date_to, with: date_to
   click_button 'List my space'
 end
