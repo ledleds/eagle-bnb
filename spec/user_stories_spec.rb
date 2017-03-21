@@ -37,8 +37,6 @@ feature 'Testing infrastructure' do
     expect {sign_up}.not_to change(User, :count)
     expect(page).to have_content('Email is already taken')
   end
-<<<<<<< HEAD
-=======
 
   scenario 'sign up fails if no password confirmation is entered' do
     expect {sign_up(password_confirmation: nil)}.not_to change(User, :count)
@@ -50,5 +48,4 @@ feature 'Testing infrastructure' do
     expect(page).to have_content('Password does not match the confirmation')
   end
 
->>>>>>> sign-up-branch
 end
