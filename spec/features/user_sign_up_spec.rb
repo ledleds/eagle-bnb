@@ -1,4 +1,4 @@
-feature 'Testing infrastructure' do
+feature 'User sign up' do
 
   scenario 'homepage loads' do
     visit('/')
@@ -13,7 +13,7 @@ feature 'Testing infrastructure' do
   scenario 'user can sign up' do
     expect{sign_up}.to change(User, :count).by 1
     expect(User.first.email).to eq 'terry@eagle.com'
-    expect(page).to have_content 'Welcome new user!'
+    expect(page).to have_content 'Welcome, terryeagle'
   end
 
   scenario 'user cannot sign up without entering an email' do
