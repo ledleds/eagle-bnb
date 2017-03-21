@@ -14,7 +14,7 @@ def click_list_space
   click_link 'List Space'
 end
 
-def list_space(title: 'The Crows Nest', description: 'Cosy cottage in the heart of Devon', price: 65, date_from: 01-06-2017, date_to: 07-06-2017)
+def list_space(title: 'The Crows Nest', description: 'Cosy cottage in the heart of Devon', price: 65, date_from: 'Jan', date_to: 'Feb')
   fill_in :title, with: title
   fill_in :description, with: description
   fill_in :price, with: price
