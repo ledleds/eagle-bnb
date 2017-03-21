@@ -15,6 +15,7 @@ class User
 
   attr_reader :password
   attr_accessor :password_confirmation
+
   validates_confirmation_of :password
 
   def password=(password)
@@ -23,7 +24,3 @@ class User
   end
 
 end
-
-DataMapper.setup(:default, "postgres://localhost/makersbnb_#{ENV['RACK_ENV']}")
-DataMapper.finalize
-DataMapper.auto_upgrade!
