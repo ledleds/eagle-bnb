@@ -24,7 +24,7 @@ register Sinatra::Flash
       session[:user_id] = @user.id
       redirect '/users'
     else
-      flash.now[:notice] = "Email must not be blank"
+      flash.now[:errors] = @user.errors.full_messages
       erb :'users/sign_up'
     end
   end

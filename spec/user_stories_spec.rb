@@ -21,4 +21,9 @@ feature 'Testing infrastructure' do
     expect(page).to have_content('Email must not be blank')
   end
 
+  scenario 'sign up fails if no username is entered' do
+    expect {sign_up(username:nil)}.not_to change(User, :count)
+    expect(page).to have_content('Username must not be blank')
+  end
+
 end
