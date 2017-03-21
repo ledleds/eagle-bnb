@@ -2,10 +2,10 @@
 
 Team Eagle consists of:
 
--Vicky Ledsom
--Vicky Roberts
--Bernard Malhame
--Noora Al Qasimi
+- Vicky Ledsom
+- Vicky Roberts
+- Bernard Malhame
+- Noora Al Qasimi
 
 
 ## User Stories:
