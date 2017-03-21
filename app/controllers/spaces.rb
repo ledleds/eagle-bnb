@@ -26,6 +26,15 @@ class MakersBnB < Sinatra::Base
     erb :request
   end
 
+  post '/space' do
+
+  end
+
+  get '/spaces/:id' do
+    space = Space.first(id: params[:id])
+    erb :'space'
+  end
+
 
   # run! if app_file == $0
 end
