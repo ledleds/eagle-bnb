@@ -13,10 +13,10 @@
     <body>
       <% if current_user %>
         Welcome, <%= current_user.username %>
-        <!-- <form action = '/sessions' method = 'POST'>
+        <form action = '/sessions' method = 'POST'>
           <input type = 'hidden' name = '_method' value = 'delete'/>
           <input type = 'submit' value = 'Sign Out'/>
-        </form> -->
+        </form>
       <% end %>
 
       <% if flash[:errors] && !flash[:errors].empty? %>
