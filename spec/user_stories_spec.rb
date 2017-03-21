@@ -16,7 +16,7 @@ feature 'Testing infrastructure' do
     expect(page).to have_content 'Welcome new user!'
   end
 
-  scenario 'user cannot sign up without entering an email' do
+  scenario 'sign up fails if no email is entered' do
     expect {sign_up(email:nil)}.not_to change(User, :count)
     expect(page).to have_content('Email must not be blank')
   end
@@ -32,4 +32,9 @@ feature 'Testing infrastructure' do
     expect(page).to have_content('Username is already taken')
   end
 
+  scenario 'sign up fails with an existing email' do
+    sign_up
+    expect {sign_up}.not_to change(User, :count)
+    expect(page).to have_content('Email is already taken')
+  end
 end
