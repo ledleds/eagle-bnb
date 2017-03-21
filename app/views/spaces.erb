@@ -1,1 +1,9 @@
-<h1> Choose a space</h1>
+<h1> Choose a space </h1>
+
+<ul id='spaces'>
+  <% @spaces.each do |space| %>
+    <li>
+      Space: <%= space.title %>
+    </li>
+  <% end %>
+</ul>

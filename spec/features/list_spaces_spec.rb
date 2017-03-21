@@ -20,7 +20,8 @@ feature 'Listing Spaces' do
 
   scenario 'user can list a space and see listings' do
     list_space
-    expect(page).to have_link('See Spaces')
+    click_link 'See Spaces'
+    expect(page).to have_content 'The Crows Nest'
   end
 
 

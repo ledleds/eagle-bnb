@@ -5,6 +5,5 @@ feature 'Requesting spaces' do
     expect(page).to have_content 'Choose a space'
   end
 
-
-  scenario
+  
 end
