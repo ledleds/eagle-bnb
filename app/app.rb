@@ -2,6 +2,7 @@ require 'sinatra/base'
 require_relative 'models/user'
 require 'sinatra/flash'
 
+
 class MakersBnB < Sinatra::Base
 
 register Sinatra::Flash
@@ -35,3 +36,5 @@ register Sinatra::Flash
 
   run! if app_file == $0
 end
+
+require_relative './controllers/spaces'
