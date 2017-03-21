@@ -23,6 +23,4 @@ feature 'Listing Spaces' do
     click_link 'See Spaces'
     expect(page).to have_content 'The Crows Nest'
   end
-
-
 end
