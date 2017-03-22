@@ -28,12 +28,14 @@ feature 'User sign up' do
 
   scenario 'sign up fails with an existing username' do
     sign_up(username: 'terry', email: "b@a.com")
+    click_button 'Sign Out'
     expect {sign_up(username: 'terry', email: "c@s.com")}.not_to change(User, :count)
     expect(page).to have_content('Username is already taken')
   end
 
   scenario 'sign up fails with an existing email' do
     sign_up
+    click_button 'Sign Out'
     expect {sign_up}.not_to change(User, :count)
     expect(page).to have_content('Email is already taken')
   end

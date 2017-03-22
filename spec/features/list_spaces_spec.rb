@@ -5,7 +5,7 @@ feature 'Listing Spaces' do
     click_list_space
   end
 
-  xscenario 'user has to be signed in' 
+  xscenario 'user has to be signed in' do
     expect(page).to have_content 'You have to be signed in to list a space'
   end
 
