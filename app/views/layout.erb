@@ -17,7 +17,7 @@
         <ul>
           <li><a href='/spaces'>View Spaces</a></li>
           <li><a href='/hosts'>List Space</a></li>
-          <li><a href='/accounts'>My Account</a></li>
+          <li><a href='/users/<%= current_user.username %>'>My Account</a></li>
       <% else %>
           <li><a href='/sessions/new'>Sign In</a></li>
           <li><a href='/users/new'>Sign Up</a></li>

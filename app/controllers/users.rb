@@ -19,4 +19,10 @@ class MakersBnB < Sinatra::Base
     end
   end
 
+  get '/users/:username' do
+    user = User.first(username: params[:username])
+    @listings = user ? user.spaces : []
+    erb :'users/account'
+  end
+
 end
