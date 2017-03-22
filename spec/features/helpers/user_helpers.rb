@@ -1,3 +1,5 @@
+require 'date'
+
 def sign_up(username: 'terryeagle', name: 'Terry', email: 'terry@eagle.com', password: 'test', password_confirmation: 'test')
   visit '/'
   click_link 'Sign Up'
@@ -30,7 +32,11 @@ def click_list_space
   click_link 'List Space'
 end
 
-def list_space(title: 'The Crows Nest', description: 'Cosy cottage in the heart of Devon', price: 65, date_from: 'Jan', date_to: 'Feb')
+def list_space(title: 'The Crows Nest',
+              description: 'Cosy cottage in the heart of Devon',
+              price: 65,
+              date_from: Date.new(2017, 1, 26),
+              date_to: Date.new(2017, 1, 29))
   fill_in :title, with: title
   fill_in :description, with: description
   fill_in :price, with: price

@@ -10,6 +10,8 @@ class MakersBnB < Sinatra::Base
                         price: params[:price],
                         date_from: params[:date_from],
                         date_to: params[:date_to])
+    p @space.date_from
+    p @space.date_to
     redirect '/confirmation'
   end
 

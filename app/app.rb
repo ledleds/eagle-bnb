@@ -2,6 +2,7 @@ ENV['RACK_ENV'] ||= 'development'
 
 require 'sinatra/base'
 require 'sinatra/flash'
+require 'date'
 require_relative 'models/user'
 require_relative 'models/space'
 require_relative './datamapper_setup'

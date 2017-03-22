@@ -11,6 +11,10 @@ class User
   property :email, String, required: true, unique: true
   property :password_digest, Text
 
+  has n, :spaces, through: Resource
+  # For later: when request database is set up
+  # has n, :requests, through: Resource
+
 
   attr_reader :password
   attr_accessor :password_confirmation
