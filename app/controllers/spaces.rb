@@ -31,8 +31,8 @@ class MakersBnB < Sinatra::Base
   end
 
   get '/spaces/:id' do
-    space = Space.first(id: params[:id])
-    erb :'space'
+    @space = Space.first(id: params[:id])
+    erb :space
   end
 
 

@@ -2,15 +2,12 @@
 
 <ul id='spaces'>
   <% @spaces.each do |space| %>
+    <a href="/spaces/<%= space.id %>">
+
     <li>
+       <%= space.title %>
+     </li>
 
-      Space: <%= space.title %>
-
-    </li>
-
-    <form action='/space' method='post'>
-      <input type="submit" value="See Space">
-
-    </form>
+    </a>
   <% end %>
 </ul>
