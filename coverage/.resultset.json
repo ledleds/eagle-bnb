@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Noora/Desktop/Projects/Course/Week-6/makersbnb-eagle/app/app.rb": [
+      "/Users/bernardmalhame/Desktop/makers/week6c/makersbnb-eagle/app/app.rb": [
         1,
         null,
         1,
@@ -20,7 +20,11 @@
         null,
         1,
         1,
-        180,
+        177,
+        null,
+        null,
+        1,
+        0,
         null,
         null,
         null,
@@ -35,7 +39,7 @@
         1,
         1
       ],
-      "/Users/Noora/Desktop/Projects/Course/Week-6/makersbnb-eagle/app/models/user.rb": [
+      "/Users/bernardmalhame/Desktop/makers/week6c/makersbnb-eagle/app/models/user.rb": [
         1,
         1,
         1,
@@ -50,7 +54,6 @@
         1,
         null,
         1,
-        null,
         null,
         null,
         1,
@@ -72,7 +75,7 @@
         null,
         null
       ],
-      "/Users/Noora/Desktop/Projects/Course/Week-6/makersbnb-eagle/app/models/space.rb": [
+      "/Users/bernardmalhame/Desktop/makers/week6c/makersbnb-eagle/app/models/space.rb": [
         1,
         1,
         1,
@@ -92,7 +95,7 @@
         null,
         null
       ],
-      "/Users/Noora/Desktop/Projects/Course/Week-6/makersbnb-eagle/app/datamapper_setup.rb": [
+      "/Users/bernardmalhame/Desktop/makers/week6c/makersbnb-eagle/app/datamapper_setup.rb": [
         1,
         1,
         null,
@@ -103,7 +106,7 @@
         1,
         1
       ],
-      "/Users/Noora/Desktop/Projects/Course/Week-6/makersbnb-eagle/app/controllers/users.rb": [
+      "/Users/bernardmalhame/Desktop/makers/week6c/makersbnb-eagle/app/controllers/users.rb": [
         1,
         null,
         1,
@@ -133,7 +136,7 @@
         null,
         null
       ],
-      "/Users/Noora/Desktop/Projects/Course/Week-6/makersbnb-eagle/app/controllers/sessions.rb": [
+      "/Users/bernardmalhame/Desktop/makers/week6c/makersbnb-eagle/app/controllers/sessions.rb": [
         1,
         1,
         4,
@@ -157,7 +160,7 @@
         null,
         null
       ],
-      "/Users/Noora/Desktop/Projects/Course/Week-6/makersbnb-eagle/app/controllers/spaces.rb": [
+      "/Users/bernardmalhame/Desktop/makers/week6c/makersbnb-eagle/app/controllers/spaces.rb": [
         1,
         null,
         1,
@@ -187,24 +190,18 @@
         4,
         null,
         null,
-        1,
-        1,
         null,
-        null,
-        1,
         null,
         null,
         null,
         1,
         2,
         2,
-        null,
-        null,
         null,
         null,
         null
       ],
-      "/Users/Noora/Desktop/Projects/Course/Week-6/makersbnb-eagle/spec/features/helpers/user_helpers.rb": [
+      "/Users/bernardmalhame/Desktop/makers/week6c/makersbnb-eagle/spec/features/helpers/user_helpers.rb": [
         1,
         null,
         1,
@@ -254,7 +251,7 @@
         5,
         null
       ],
-      "/Users/Noora/Desktop/Projects/Course/Week-6/makersbnb-eagle/spec/features/list_spaces_spec.rb": [
+      "/Users/bernardmalhame/Desktop/makers/week6c/makersbnb-eagle/spec/features/list_spaces_spec.rb": [
         1,
         null,
         1,
@@ -280,74 +277,42 @@
         null,
         null
       ],
-      "/Users/Noora/Desktop/Projects/Course/Week-6/makersbnb-eagle/spec/features/request_space_spec.rb": [
+      "/Users/bernardmalhame/Desktop/makers/week6c/makersbnb-eagle/spec/features/request_space_spec.rb": [
         1,
         null,
-        1,
-        3,
-        null,
-        null,
-        1,
         1,
         1,
         null,
         null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         null,
         null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         null,
-        null
-      ],
-      "/Users/Noora/Desktop/Projects/Course/Week-6/makersbnb-eagle/spec/features/user_listing_spec.rb": [
-        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         1,
         1,
         1,
         1,
         1,
+        1,
+        1,
+        null,
+        null,
         null,
         1,
         null,
         null
       ],
-      "/Users/Noora/Desktop/Projects/Course/Week-6/makersbnb-eagle/spec/features/user_sign_in_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/Noora/Desktop/Projects/Course/Week-6/makersbnb-eagle/spec/features/user_sign_out_spec.rb": [
+      "/Users/bernardmalhame/Desktop/makers/week6c/makersbnb-eagle/spec/features/user_listing_spec.rb": [
         1,
         null,
         1,
@@ -359,7 +324,42 @@
         null,
         null
       ],
-      "/Users/Noora/Desktop/Projects/Course/Week-6/makersbnb-eagle/spec/features/user_sign_up_spec.rb": [
+      "/Users/bernardmalhame/Desktop/makers/week6c/makersbnb-eagle/spec/features/user_sign_in_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/bernardmalhame/Desktop/makers/week6c/makersbnb-eagle/spec/features/user_sign_out_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/bernardmalhame/Desktop/makers/week6c/makersbnb-eagle/spec/features/user_sign_up_spec.rb": [
         1,
         null,
         1,
@@ -415,10 +415,30 @@
         null,
         null
       ],
-      "/Users/Noora/Desktop/Projects/Course/Week-6/makersbnb-eagle/spec/features/view_space_spec.rb": [
-
+      "/Users/bernardmalhame/Desktop/makers/week6c/makersbnb-eagle/spec/features/view_space_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
       ],
-      "/Users/Noora/Desktop/Projects/Course/Week-6/makersbnb-eagle/spec/models/user_spec.rb": [
+      "/Users/bernardmalhame/Desktop/makers/week6c/makersbnb-eagle/spec/models/user_spec.rb": [
         1,
         1,
         null,
@@ -441,6 +461,6 @@
         null
       ]
     },
-    "timestamp": 1490199724
+    "timestamp": 1490207589
   }
 }

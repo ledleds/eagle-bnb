@@ -18,6 +18,10 @@ class MakersBnB < Sinatra::Base
       def current_user
         @current_user ||= User.get(session[:user_id])
       end
+
+      def current_space
+        @current_space ||= Space.get(session[:space_id])
+      end
   end
 
   get '/' do
@@ -27,6 +31,7 @@ class MakersBnB < Sinatra::Base
   run! if app_file == $0
 end
 
+require_relative './controllers/requests'
 require_relative './controllers/users'
 require_relative './controllers/sessions'
 require_relative './controllers/spaces'
