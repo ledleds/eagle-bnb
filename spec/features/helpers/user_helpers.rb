@@ -46,10 +46,3 @@ def list_space(title: 'The Crows Nest',
   fill_in :date_to, with: date_to
   click_button 'List my space'
 end
-
-def view_spaces
-  click_list_space
-  list_space
-  click_link 'See Spaces'
-  click_link 'Request booking'
-end
