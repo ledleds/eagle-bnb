@@ -5,8 +5,10 @@ feature 'Listing Spaces' do
     click_list_space
   end
 
-  xscenario 'user has to be signed in' do
-    expect(page).to have_content 'You have to be signed in to list a space'
+  scenario 'user has to be signed in' do
+    click_button "Sign Out"
+    visit ('/hosts')
+    expect(page).to have_content 'Please sign in or sign up to list a space'
   end
 
   scenario 'user can list a space for rent' do
