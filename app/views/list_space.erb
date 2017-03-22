@@ -1,5 +1,6 @@
 <h1>List your nest below</h1>
 
+<% if current_user %>
 <form action='/submit-listing' method ='post'>
 
   <label for='title'> Title:</label>
@@ -17,5 +18,12 @@
   <label for='date_to'> Date to: </label>
   <input type= 'date' name='date_to' required>
 
-  <input type='submit' value='List my space'>
+  <input type= 'submit' value = 'List my space'>
+
 </form>
+
+  <% else %>
+
+  <% flash.now[:errors] = ['Please sign in or sign up to list a space']%>
+
+  <% end %>
