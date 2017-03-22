@@ -1,7 +1,7 @@
 feature 'Requesting spaces' do
 
   before(:each) do
-
+    sign_up
   end
 
   scenario 'user can view all spaces' do
