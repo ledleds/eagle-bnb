@@ -10,6 +10,8 @@ require './app/models/user'
 require './app/app'
 require 'features/helpers/user_helpers'
 require 'database_cleaner'
+require 'dm-types'
+require 'date'
 
 Capybara.app = MakersBnB
 

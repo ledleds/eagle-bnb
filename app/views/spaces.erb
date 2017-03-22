@@ -2,9 +2,12 @@
 
 <ul id='spaces'>
   <% @spaces.each do |space| %>
+    <a href="/spaces/<%= space.id %>">
+
     <li>
-      Space: <%= space.title %>
-    </li>
-    <a href="/request">Request</a>
+       <%= space.title %>
+     </li>
+
+    </a>
   <% end %>
 </ul>

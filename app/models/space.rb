@@ -1,5 +1,6 @@
 require 'data_mapper'
 require 'dm-postgres-adapter'
+require 'dm-timestamps'
 
 class Space
 
@@ -9,11 +10,9 @@ class Space
   property :title, String
   property :description, Text
   property :price, Integer
-  property :date_from, String
-  property :date_to, String
+  property :date_from, Date
+  property :date_to, Date
 
-
-  attr_reader :title, :description, :price
-
+  belongs_to :user
 
 end

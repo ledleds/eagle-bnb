@@ -6,6 +6,5 @@ feature 'User sign out' do
      click_button 'Sign Out'
      expect(page).to have_content('Goodbye!')
      expect(page).not_to have_content('Welcome, terryeagle')
-
    end
 end
