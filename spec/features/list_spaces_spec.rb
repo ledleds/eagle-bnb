@@ -1,6 +1,7 @@
 feature 'Listing Spaces' do
 
   before(:each) do
+    sign_up
     click_list_space
   end
 
@@ -10,6 +11,7 @@ feature 'Listing Spaces' do
 
   scenario 'user can list a space for rent' do
     # sign_in # This will be implemented when sign-in has been created
+
     expect(current_path).to eq '/hosts'
   end
 
