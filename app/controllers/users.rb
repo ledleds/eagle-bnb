@@ -19,8 +19,4 @@ class MakersBnB < Sinatra::Base
     end
   end
 
-  get '/users' do
-    'Welcome new user!'
-  end
-
 end

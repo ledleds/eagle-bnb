@@ -7,7 +7,7 @@ feature 'User sign up' do
 
   scenario 'has sign up button' do
     visit '/'
-    expect(page).to have_content 'Sign up'
+    expect(page).to have_content 'Sign Up'
   end
 
   scenario 'user can sign up' do

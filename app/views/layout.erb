@@ -2,15 +2,18 @@
  <html>
     <head>
       <title> EagleBnB | Find your perfect nest! </title>
+    </head>
+
+    <body>
+      
       <nav>
         <ul>
           <li><a href='/sessions/new'>Sign In</a></li>
           <li><a href='/users/new'>Sign Up</a></li>
           <li><a href='/hosts'>List Space</a></li>
         </ul>
-    </head>
+      </nav>
 
-    <body>
       <% if current_user %>
         Welcome, <%= current_user.username %>
         <form action = '/sessions' method = 'POST'>

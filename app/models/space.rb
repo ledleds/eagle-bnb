@@ -13,7 +13,7 @@ class Space
   property :date_to, String
 
 
-  attr_reader :title, :description, :price
+  # attr_reader :title, :description, :price
 
 
 end
