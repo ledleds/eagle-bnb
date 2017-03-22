@@ -1,3 +1,13 @@
+require 'coveralls'
+require 'simplecov'
+
+SimpleCov.start
+
+# SimpleCov.formatters = [
+#   SimpleCov::Formatter::HTMLFormatter,
+#   Coveralls::SimpleCov::Formatter
+# ]
+# Coveralls.wear!
 
 ENV['RACK_ENV'] = 'test'
 
@@ -12,6 +22,7 @@ require 'features/helpers/user_helpers'
 require 'database_cleaner'
 require 'dm-types'
 require 'date'
+
 
 Capybara.app = MakersBnB
 
