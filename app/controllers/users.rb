@@ -21,7 +21,7 @@ class MakersBnB < Sinatra::Base
 
   get '/users/:username' do
     user = User.first(username: params[:username])
-    @listings = user ? user.spaces : []
+    @listings = user.spaces
     erb :'users/account'
   end
 

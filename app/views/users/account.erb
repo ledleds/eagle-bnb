@@ -2,7 +2,7 @@
 
 <ul id='listings'>
   <% @listings.each do |listing| %>
-    
+    <a href="/spaces/<%= listing.id %>">
 
     <li>
        <%= listing.title %>
