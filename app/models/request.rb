@@ -7,6 +7,7 @@ class Request
   include DataMapper::Resource
 
   property :id, Serial
+  property :username, String
   property :request_date_from, Date
   property :request_date_to, Date
 
