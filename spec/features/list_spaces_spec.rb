@@ -11,12 +11,6 @@ feature 'Listing Spaces' do
     expect(page).to have_content 'Please sign in or sign up to list a space'
   end
 
-  scenario 'user can list a space for rent' do
-    # sign_in # This will be implemented when sign-in has been created
-
-    expect(current_path).to eq '/hosts'
-  end
-
   scenario 'user can list their space' do
     expect{list_space}.to change(Space, :count).by 1
     expect(Space.first.title).to eq 'The Crows Nest'
