@@ -1,0 +1,17 @@
+<h1> Choose a space </h1>
+
+<ul id='spaces'>
+  <% @spaces.each do |space| %>
+
+    <li style="list-style:none;width:300px">
+       <%= space.title %>
+       <a href="/spaces/<%= space.id %>">
+       <img style="display:block;width:100%;" src="<%= space.img %>" />
+     </a>
+       <p>£<%= space.price %></p>
+       <p><%= space.date_from %>  -  <%= space.date_to %></p>
+       <a href="/spaces/<%= space.id %>"><button>REQUEST</button></a>
+     </li>
+
+    <% end %>
+</ul>

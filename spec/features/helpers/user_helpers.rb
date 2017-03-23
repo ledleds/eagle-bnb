@@ -33,6 +33,7 @@ def click_list_space
 end
 
 def list_space(title: 'The Crows Nest',
+              img: 'http://www.homedesignetc.com/wp-content/uploads/2014/10/16-lakesidecabin.jpg',
               description: 'Cosy cottage in the heart of Devon',
               price: 65,
               date_from: '2017-01-26',
