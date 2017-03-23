@@ -1,0 +1,21 @@
+
+<h2>Please select arrival and departure dates.</h2>
+
+<% if current_user %>
+<form action='/submit-request' method ='post'>
+
+  <label for='request_date_from'> Arrival: </label>
+  <input type= 'date' name='request_date_from' required>
+
+  <label for='request_date_to'> Departure: </label>
+  <input type= 'date' name='request_date_to' required>
+
+  <input type= 'submit' value = 'Request'>
+
+</form>
+
+<% else %>
+
+  <% flash.now[:errors] = ['Please sign in or sign up to request a space']%>
+
+<% end %>
