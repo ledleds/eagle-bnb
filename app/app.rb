@@ -23,6 +23,10 @@ class MakersBnB < Sinatra::Base
       def current_space
         @current_space ||= Space.get(session[:space_id])
       end
+
+      def current_request
+        @current_request ||= Request.get(session[:space_id])
+      end
   end
 
   get '/' do

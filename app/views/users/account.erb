@@ -10,6 +10,7 @@
      </a>
        <% listing.requests.each do |lr| %>
          <%= lr.username %>
+         <% @current_request = lr %>
          <form action='/approve' method='post'>
             <input type="submit" value="Approve">
          </form>
@@ -25,15 +26,13 @@
 <ul id='requests'>
   <% @requests.each do |request| %>
 
-
-    <li>
+      <li>
       <a href="/spaces/<%= request.space.id %>">
        <%= request.space.title %>
       </a>
-        <% if request.approved %>
+        <% if @current_request.approved %>
        Your booking has been approved
        <% end %>
-
 
     </li>
 

@@ -27,10 +27,7 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/approve' do
-    p params[:name]
-    @request_to_be_approved = params[:name]
-    @request_to_be_approved.approved = true
-
+    @current_request.approved = true
   end
 
 
