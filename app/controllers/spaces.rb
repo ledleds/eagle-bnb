@@ -17,7 +17,7 @@ class MakersBnB < Sinatra::Base
   end
 
   get '/confirmation' do
-    erb :confirmation
+    erb :'spaces/list_confirmation'
   end
 
   get '/spaces' do
