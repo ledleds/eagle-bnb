@@ -9,13 +9,13 @@
        <img style="width:300px" src="<%= listing.img %>">
      </a>
        <% listing.requests.each do |lr| %>
-         <%= lr.username %>
-         <% @current_request = lr %>
+        <%= lr.username %>
+
          <form action='/approve' method='post'>
-            <input type="submit" value="Approve">
+            <input type='hidden' name ="_method" value="<%= lr.id %>">
+            <input type = 'submit' value = 'Approve'/>
          </form>
          <% end %>
-
     </li>
 
   <% end %>
@@ -26,14 +26,12 @@
 <ul id='requests'>
   <% @requests.each do |request| %>
 
-      <li>
+    <li>
       <a href="/spaces/<%= request.space.id %>">
-       <%= request.space.title %>
-      </a>
-        <% if @current_request.approved %>
-       Your booking has been approved
-       <% end %>
 
+       <%= request.space.title %>
+           </a>
+       <%= request.approved %>
     </li>
 
 
