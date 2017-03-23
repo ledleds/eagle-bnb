@@ -9,7 +9,7 @@
 
 <% if current_user %>
 <form action='/request' method = 'get'>
-<input type= 'submit' value = 'Request booking'>
+<input type= 'submit' value = 'Choose dates'>
 </form>
 <% else %>
   <% flash.now[:errors] = ['Please sign in or sign up to request a booking.']%>

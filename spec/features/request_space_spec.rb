@@ -6,7 +6,7 @@ feature 'Requesting spaces' do
     list_space
     visit '/spaces'
     click_link 'REQUEST'
-    click_button 'Request booking'
+    click_button 'Choose dates'
   end
 
   scenario 'user can request a space' do
