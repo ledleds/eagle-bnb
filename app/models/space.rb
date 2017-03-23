@@ -8,6 +8,7 @@ class Space
 
   property :id, Serial
   property :title, String
+  property :img, FilePath
   property :description, Text
   property :price, Integer
   property :date_from, Date

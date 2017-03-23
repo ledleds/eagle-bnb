@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/vicky/Programmes/makers-bnb-eagle/app/app.rb": [
+      "/Users/timcady/MakersAcademy/week-6/monday/makersbnb-eagle/app/app.rb": [
         1,
         null,
         1,
@@ -20,7 +20,7 @@
         null,
         1,
         1,
-        175,
+        168,
         null,
         null,
         null,
@@ -35,7 +35,7 @@
         1,
         1
       ],
-      "/Users/vicky/Programmes/makers-bnb-eagle/app/models/user.rb": [
+      "/Users/timcady/MakersAcademy/week-6/monday/makersbnb-eagle/app/models/user.rb": [
         1,
         1,
         1,
@@ -72,7 +72,7 @@
         null,
         null
       ],
-      "/Users/vicky/Programmes/makers-bnb-eagle/app/models/space.rb": [
+      "/Users/timcady/MakersAcademy/week-6/monday/makersbnb-eagle/app/models/space.rb": [
         1,
         1,
         1,
@@ -81,6 +81,7 @@
         null,
         1,
         null,
+        1,
         1,
         1,
         1,
@@ -92,7 +93,7 @@
         null,
         null
       ],
-      "/Users/vicky/Programmes/makers-bnb-eagle/app/datamapper_setup.rb": [
+      "/Users/timcady/MakersAcademy/week-6/monday/makersbnb-eagle/app/datamapper_setup.rb": [
         1,
         1,
         null,
@@ -103,7 +104,7 @@
         1,
         1
       ],
-      "/Users/vicky/Programmes/makers-bnb-eagle/app/controllers/users.rb": [
+      "/Users/timcady/MakersAcademy/week-6/monday/makersbnb-eagle/app/controllers/users.rb": [
         1,
         null,
         1,
@@ -133,7 +134,7 @@
         null,
         null
       ],
-      "/Users/vicky/Programmes/makers-bnb-eagle/app/controllers/sessions.rb": [
+      "/Users/timcady/MakersAcademy/week-6/monday/makersbnb-eagle/app/controllers/sessions.rb": [
         1,
         1,
         4,
@@ -157,7 +158,7 @@
         null,
         null
       ],
-      "/Users/vicky/Programmes/makers-bnb-eagle/app/controllers/spaces.rb": [
+      "/Users/timcady/MakersAcademy/week-6/monday/makersbnb-eagle/app/controllers/spaces.rb": [
         1,
         null,
         1,
@@ -171,10 +172,8 @@
         null,
         null,
         null,
-        4,
         null,
-        4,
-        4,
+        null,
         4,
         null,
         null,
@@ -196,15 +195,15 @@
         null,
         null,
         1,
-        2,
-        2,
+        1,
+        1,
         null,
         null,
         null,
         null,
         null
       ],
-      "/Users/vicky/Programmes/makers-bnb-eagle/spec/features/helpers/user_helpers.rb": [
+      "/Users/timcady/MakersAcademy/week-6/monday/makersbnb-eagle/spec/features/helpers/user_helpers.rb": [
         1,
         null,
         1,
@@ -246,23 +245,16 @@
         null,
         null,
         null,
+        null,
         4,
         4,
         4,
         4,
         4,
         4,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null
       ],
-      "/Users/vicky/Programmes/makers-bnb-eagle/spec/features/list_spaces_spec.rb": [
+      "/Users/timcady/MakersAcademy/week-6/monday/makersbnb-eagle/spec/features/list_spaces_spec.rb": [
         1,
         null,
         1,
@@ -294,7 +286,7 @@
         null,
         null
       ],
-      "/Users/vicky/Programmes/makers-bnb-eagle/spec/features/request_space_spec.rb": [
+      "/Users/timcady/MakersAcademy/week-6/monday/makersbnb-eagle/spec/features/request_space_spec.rb": [
         1,
         null,
         1,
@@ -322,45 +314,46 @@
         1,
         1,
         1,
-        null,
-        null
-      ],
-      "/Users/vicky/Programmes/makers-bnb-eagle/spec/features/user_sign_in_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/vicky/Programmes/makers-bnb-eagle/spec/features/user_sign_out_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
         1,
         null,
         null
       ],
-      "/Users/vicky/Programmes/makers-bnb-eagle/spec/features/user_sign_up_spec.rb": [
+      "/Users/timcady/MakersAcademy/week-6/monday/makersbnb-eagle/spec/features/user_sign_in_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/timcady/MakersAcademy/week-6/monday/makersbnb-eagle/spec/features/user_sign_out_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/timcady/MakersAcademy/week-6/monday/makersbnb-eagle/spec/features/user_sign_up_spec.rb": [
         1,
         null,
         1,
@@ -416,10 +409,10 @@
         null,
         null
       ],
-      "/Users/vicky/Programmes/makers-bnb-eagle/spec/features/view_space_spec.rb": [
+      "/Users/timcady/MakersAcademy/week-6/monday/makersbnb-eagle/spec/features/view_space_spec.rb": [
 
       ],
-      "/Users/vicky/Programmes/makers-bnb-eagle/spec/models/user_spec.rb": [
+      "/Users/timcady/MakersAcademy/week-6/monday/makersbnb-eagle/spec/models/user_spec.rb": [
         1,
         1,
         null,
@@ -442,6 +435,6 @@
         null
       ]
     },
-    "timestamp": 1490198729
+    "timestamp": 1490201520
   }
 }
