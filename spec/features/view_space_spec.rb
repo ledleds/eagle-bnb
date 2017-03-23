@@ -14,7 +14,7 @@ feature 'Requesting spaces' do
     list_space
     visit '/spaces'
     expect(page).to have_content 'The Crows Nest'
-    click_link 'The Crows Nest'
+    click_link 'REQUEST'
     expect(page).to have_content('65')
   end
 

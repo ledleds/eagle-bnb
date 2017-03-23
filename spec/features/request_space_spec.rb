@@ -9,7 +9,7 @@ feature 'Requesting spaces' do
     list_space
     visit '/spaces'
     click_link 'REQUEST'
-    click_link 'Request booking'
+    click_button 'Request booking'
     expect(page).to have_content('Your booking is complete, enjoy your stay!')
   end
 

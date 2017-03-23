@@ -13,10 +13,6 @@ class MakersBnB < Sinatra::Base
                         date_to: params[:date_to],
                         user_id: current_user.id)
 
-<<<<<<< HEAD
-=======
-
->>>>>>> master
     redirect '/confirmation'
   end
 
@@ -31,12 +27,8 @@ class MakersBnB < Sinatra::Base
 
   get '/spaces/:id' do
     @space = Space.first(id: params[:id])
-<<<<<<< HEAD
-    erb :'spaces/space'
-=======
     session[:space_id] = @space.id
-    erb :space
->>>>>>> master
+    erb :'spaces/space'
   end
 
 end
