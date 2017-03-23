@@ -24,12 +24,19 @@
 
 <ul id='requests'>
   <% @requests.each do |request| %>
-    <a href="/spaces/<%= request.space.id %>">
+
 
     <li>
+      <a href="/spaces/<%= request.space.id %>">
        <%= request.space.title %>
+      </a>
+        <% if request.approved %>
+       Your booking has been approved
+       <% end %>
+
+
     </li>
 
-    </a>
+
   <% end %>
 </ul>

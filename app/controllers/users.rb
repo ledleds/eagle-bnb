@@ -26,4 +26,12 @@ class MakersBnB < Sinatra::Base
     erb :'users/account'
   end
 
+  post '/approve' do
+    p params[:name]
+    @request_to_be_approved = params[:name]
+    @request_to_be_approved.approved = true
+
+  end
+
+
 end
