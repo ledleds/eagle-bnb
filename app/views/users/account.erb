@@ -11,3 +11,17 @@
     </a>
   <% end %>
 </ul>
+
+<h1> Your requests: </h1>
+
+<ul id='requests'>
+  <% @requests.each do |request| %>
+    <a href="/spaces/<%= request.space.id %>">
+
+    <li>
+       <%= request.space.title %>
+    </li>
+
+    </a>
+  <% end %>
+</ul>

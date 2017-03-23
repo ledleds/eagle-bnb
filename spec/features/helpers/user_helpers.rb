@@ -11,6 +11,17 @@ def sign_up(username: 'terryeagle', name: 'Terry', email: 'terry@eagle.com', pas
   click_button 'Sign Up!'
 end
 
+def sign_up_alternative(username: 'susiesmith', name: 'Susie', email: 'susie@smith.com', password: 'test', password_confirmation: 'test')
+  visit '/'
+  click_link 'Sign Up'
+  fill_in :username, with: username
+  fill_in :name, with: name
+  fill_in :email, with: email
+  fill_in :password, with: password
+  fill_in :password_confirmation, with: password_confirmation
+  click_button 'Sign Up!'
+end
+
 def sign_in(username: 'terryeagle', password: 'test')
   visit '/'
   click_link 'Sign In'
