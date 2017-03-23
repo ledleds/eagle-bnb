@@ -5,6 +5,7 @@ require 'sinatra/flash'
 require 'date'
 require_relative 'models/user'
 require_relative 'models/space'
+require_relative 'models/request'
 require_relative './datamapper_setup'
 
 
