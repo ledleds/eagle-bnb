@@ -23,8 +23,4 @@ feature 'Requesting spaces' do
     expect(page).to have_content('The property is not available for your chosen dates.')
   end
 
-  # scenario 'user can\'t request a space if it is already booked' do
-  #   click_button 'Request'
-  # end
-
 end

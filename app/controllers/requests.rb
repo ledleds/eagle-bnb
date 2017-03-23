@@ -2,7 +2,7 @@
 class MakersBnB < Sinatra::Base
 
   post '/submit-request' do
-    if available?(params[:request_date_from], params[:request_date_to])
+    if within_date_range?(params[:request_date_from], params[:request_date_to])
       request = Request.create(request_date_from: params[:request_date_from],
                           request_date_to: params[:request_date_to],
                           user_id: current_user.id,
