@@ -11,10 +11,8 @@ class MakersBnB < Sinatra::Base
                         date_from: params[:date_from],
                         date_to: params[:date_to],
                         user_id: current_user.id)
-                        p current_user
 
-    p @space.date_from
-    p @space.date_to
+
     redirect '/confirmation'
   end
 
@@ -27,19 +25,10 @@ class MakersBnB < Sinatra::Base
     erb :spaces
   end
 
-  get '/request' do
-    erb :request
-  end
-
-  post '/space' do
-
-  end
-
   get '/spaces/:id' do
     @space = Space.first(id: params[:id])
+    session[:space_id] = @space.id
     erb :space
   end
 
-
-  # run! if app_file == $0
 end
