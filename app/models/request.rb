@@ -12,8 +12,6 @@ class Request
   property :request_date_to, Date
   property :approved, Boolean, :default => false
 
-  attr_accessor :approved
-
   belongs_to :user
   belongs_to :space
 
