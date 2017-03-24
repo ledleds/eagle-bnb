@@ -1,0 +1,20 @@
+<div class="nav-bar">
+<% if current_user %>
+  Welcome, <%= current_user.username %>
+  <form action = '/sessions' method = 'POST'>
+    <input type = 'hidden' name = '_method' value = 'delete'/>
+    <input type = 'submit' value = 'Sign Out'/>
+  </form>
+  <ul style="margin:0;">
+    <li><a href='/spaces'>View Spaces</a></li>
+    <li><a href='/hosts'>List Space</a></li>
+    <li><a href='/users/<%= current_user.username %>'>My Account</a></li>
+  </ul>
+<% else %>
+<ul style="margin:0; padding: 20px; list-style:none;">
+    <li style="padding-right:10px;display:inline-block"><a style="text-decoration:none;" href='/sessions/new'>Sign In</a></li>
+    <li style="display:inline-block"><a style="text-decoration:none;" href='/users/new'>Sign Up</a></li>
+  </ul>
+<% end %>
+
+</div>

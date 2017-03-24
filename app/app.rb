@@ -2,6 +2,8 @@ ENV['RACK_ENV'] ||= 'development'
 
 require 'sinatra/base'
 require 'sinatra/flash'
+require 'sinatra/partial'
+
 require 'date'
 require_relative 'models/user'
 require_relative 'models/space'
@@ -10,9 +12,16 @@ require_relative './datamapper_setup'
 
 
 class MakersBnB < Sinatra::Base
+  set :public_folder, './app/public'
 
   enable :sessions
   register Sinatra::Flash
+  register Sinatra::Partial
+  set :partial_template_engine, :erb
+
+enable :partial_underscores
+
+
   use Rack::MethodOverride
 
   helpers do

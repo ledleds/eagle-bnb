@@ -5,13 +5,26 @@
 
     <li style="list-style:none;width:300px">
        <%= space.title %>
-       <a href="/spaces/<%= space.id %>">
+       <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
        <img style="display:block;width:100%;" src="<%= space.img %>" />
-     </a>
+      </a>
        <p>£<%= space.price %></p>
        <p><%= space.date_from %>  -  <%= space.date_to %></p>
        <a href="/spaces/<%= space.id %>"><button>View Details</button></a>
      </li>
 
+     <div id="light" class="white_content">
+       <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">X</a>
+
+       <span><img style="display:block;width:100%;" src="<%= space.img %>" /></span>
+       <h1><%= space.title %></h1>
+
+       <p><span style="font-weight:900">Details: </span><%= space.description %></p>
+       <p><span style="font-weight:900">Price: </span><%= space.price %></p>
+       <p><span style="font-weight:900">Available from: </span><%= space.date_from %></p>
+       <p><span style="font-weight:900">Available to: </span><%= space.date_to %></p>
+ </div>
+
     <% end %>
 </ul>
+<div id="fade" class="black_overlay"></div>
