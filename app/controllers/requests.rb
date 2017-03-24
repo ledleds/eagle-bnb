@@ -19,7 +19,7 @@ class MakersBnB < Sinatra::Base
       erb :'requests/request_sent'
   end
 
-  get '/request' do
-    erb :'requests/request'
-  end
+#   get '/request' do
+#     erb :'requests/request'
+#   end
 end

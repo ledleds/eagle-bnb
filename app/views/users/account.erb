@@ -2,12 +2,36 @@
 
 <ul id='listings'>
   <% @listings.each do |listing| %>
-    <a href="/spaces/<%= listing.id %>">
 
     <li>
+      <a href="/spaces/<%= listing.id %>">
        <%= listing.title %>
+       <img style="width:300px" src="<%= listing.img %>">
+     </a>
+       <% listing.requests.each do |lr| %>
+        <%= lr.username %>
+
+         <form action='/approve' method='post'>
+            <input type='hidden' name ="_method" value="<%= lr.id %>">
+            <input type = 'submit' value = 'Approve'/>
+         </form>
+         <% end %>
     </li>
 
-    </a>
+  <% end %>
+</ul>
+
+<h1> Your requests: </h1>
+
+<ul id='requests'>
+  <% @requests.each do |request| %>
+
+    <li>
+      <a href="/spaces/<%= request.space.id %>">
+
+       <%= request.space.title %>
+           </a>
+       <%= request.approved %>
+    </li>
   <% end %>
 </ul>

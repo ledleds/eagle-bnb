@@ -22,7 +22,17 @@ class MakersBnB < Sinatra::Base
   get '/users/:username' do
     user = User.first(username: params[:username])
     @listings = user.spaces
+    @requests = user.requests
     erb :'users/account'
+  end
+
+  post '/approve' do
+    request = Request.get(params[:_method])
+    p request.approved
+    request.update(:approved => true)
+    p request.approved
+
+    redirect '/'
   end
 
 end
