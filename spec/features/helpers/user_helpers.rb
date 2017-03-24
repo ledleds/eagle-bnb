@@ -81,3 +81,7 @@ def second_user_request
   fill_in :request_date_to, with: Date.new(2017,1,28)
   click_button 'Request'
 end
+
+def delete_listing
+  click_button('Delete')
+end
