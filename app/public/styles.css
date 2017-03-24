@@ -26,17 +26,43 @@
   overflow: auto;
 }*/
 
+wrapper {
+  background-color:green;
+  height:150px;
+}
+
 body {
-  background-color:red;
+  /*background-color:red;*/
   padding:0;
   margin:0;
-  background:url('https://media.giphy.com/media/7gu55dRHjvpJu/giphy.gif') no-repeat top center;
-  background-size:cover
+  /*background:url('https://media.giphy.com/media/7gu55dRHjvpJu/giphy.gif') no-repeat top center;
+  background-size:cover;*/
 }
 
 .nav-bar {
-  border-bottom:1px solid black;
+  height:40px;
+  /*border-bottom:1px solid #c6c2c5;*/
   color:red;
   z-index: 999;
   background-color:white;
+}
+
+#sign-up {
+  display:inline-block;
+  float:right;
+  margin-top:20px; padding: 10px 30px 10px 10px;
+  list-style:none;
+}
+
+a {
+  color:black;
+  text-decoration:none;
+}
+
+#form-login {
+  margin-top:20px;
+  display:inline-block;
+  padding: 10px;
+  color:black;
+  text-align:center;
 }
