@@ -32,4 +32,9 @@ class MakersBnB < Sinatra::Base
     redirect '/'
   end
 
+  post '/delete' do
+    listing = Space.get(params[:_method])
+    listing.destroy
+    erb :'spaces/removal_confirmation'
+  end
 end
