@@ -8,6 +8,12 @@
        <%= listing.title %>
        <img style="width:300px" src="<%= listing.img %>">
      </a>
+
+     <form action='/delete' method='post'>
+        <input type='hidden' name ="_method" value="<%= listing.id %>">
+        <input type = 'submit' value = 'Delete'/>
+     </form>
+
        <% listing.requests.each do |lr| %>
         <%= lr.username %>
 
