@@ -47,8 +47,8 @@ def list_space(title: 'The Crows Nest',
               img: 'http://www.homedesignetc.com/wp-content/uploads/2014/10/16-lakesidecabin.jpg',
               description: 'Cosy cottage in the heart of Devon',
               price: 65,
-              date_from: '2017-01-26',
-              date_to: '2017-01-29')
+              date_from: Date.new(2017,1,26),
+              date_to: Date.new(2017,1,29))
               # date_from: Date.new(2017, 1, 26),
               # date_to: Date.new(2017, 1, 29))
   fill_in :title, with: title

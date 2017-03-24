@@ -24,8 +24,8 @@ class MakersBnB < Sinatra::Base
         @current_space ||= Space.get(session[:space_id])
       end
 
-      def current_request
-        @current_request ||= Request.get(session[:space_id])
+      def within_date_range?(request_date_from, request_date_to)
+        current_space.date_from <= Date.parse(request_date_from) && current_space.date_to >= Date.parse(request_date_to)
       end
   end
 

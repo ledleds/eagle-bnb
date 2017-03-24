@@ -6,7 +6,13 @@
 <p><span style="font-weight:900">Price: </span><%= @space.price %></p>
 <p><span style="font-weight:900">Available from: </span><%= @space.date_from %></p>
 <p><span style="font-weight:900">Available to: </span><%= @space.date_to %></p>
-<form action='/submit-request' method = 'post'>
-<input type= 'submit' value = 'Request booking'>
+
+<% if current_user %>
+<form action='/request' method = 'get'>
+<input type= 'submit' value = 'Choose dates'>
 </form>
+<% else %>
+  <% flash.now[:errors] = ['Please sign in or sign up to request a booking.']%>
+<% end %>
+
 <a href="/spaces">Back to spaces</a>
