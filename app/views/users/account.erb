@@ -26,12 +26,17 @@
 <ul id='requests'>
   <% @requests.each do |request| %>
 
-    <li>
-      <a href="/spaces/<%= request.space.id %>">
+  <li>
+    <a href="/spaces/<%= request.space.id %>">
 
-       <%= request.space.title %>
-           </a>
-       <%= request.approved %>
-    </li>
-  <% end %>
+     <%= request.space.title %>
+         </a>
+
+     <% if request.approved %>
+     <p> approved </p>
+     <% else %>
+     <p> pending </p>
+     <% end %>
+  </li>
+<% end %>
 </ul>
