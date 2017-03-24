@@ -49,12 +49,27 @@ def list_space(title: 'The Crows Nest',
               price: 65,
               date_from: Date.new(2017,1,26),
               date_to: Date.new(2017,1,29))
-              # date_from: Date.new(2017, 1, 26),
-              # date_to: Date.new(2017, 1, 29))
   fill_in :title, with: title
   fill_in :description, with: description
   fill_in :price, with: price
   fill_in :date_from, with: date_from
   fill_in :date_to, with: date_to
   click_button 'List my space'
+end
+
+def first_user_lisitng
+  sign_up
+  click_list_space
+  list_space
+  click_button 'Sign Out'
+end
+
+def second_user_request
+  sign_up_alternative
+  click_link 'View Spaces'
+  click_link 'View Details'
+  click_button 'Choose dates'
+  fill_in :request_date_from, with: Date.new(2017,1,27)
+  fill_in :request_date_to, with: Date.new(2017,1,28)
+  click_button 'Request'
 end
