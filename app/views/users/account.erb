@@ -1,5 +1,4 @@
-<h1>Welcome to your account</h1>
-<h3> Your listings: </h3>
+<h1> Your listings: </h1>
 
 <ul id='listings'>
   <% @listings.each do |listing| %>
@@ -9,12 +8,6 @@
        <%= listing.title %>
        <img style="width:300px" src="<%= listing.img %>">
      </a>
-
-     <form action='/delete' method='post'>
-        <input type='hidden' name ="_method" value="<%= listing.id %>">
-        <input type = 'submit' value = 'Delete'/>
-     </form>
-
        <% listing.requests.each do |lr| %>
         <%= lr.username %>
 
@@ -28,7 +21,7 @@
   <% end %>
 </ul>
 
-<h3> Your requests: </h3>
+<h1> Your requests: </h1>
 
 <ul id='requests'>
   <% @requests.each do |request| %>
