@@ -5,7 +5,7 @@ feature 'Requesting spaces' do
     click_list_space
     list_space
     visit '/spaces'
-    click_link 'REQUEST'
+    click_link 'View Details'
     click_button 'Choose dates'
   end
 

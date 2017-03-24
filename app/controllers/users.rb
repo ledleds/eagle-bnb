@@ -28,10 +28,7 @@ class MakersBnB < Sinatra::Base
 
   post '/approve' do
     request = Request.get(params[:_method])
-    p request.approved
     request.update(:approved => true)
-    p request.approved
-
     redirect '/'
   end
 
