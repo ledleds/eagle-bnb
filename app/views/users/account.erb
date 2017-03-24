@@ -38,7 +38,11 @@
 
        <%= request.space.title %>
            </a>
-       <%= request.approved %>
+        <% if request.approved %>
+       <p> approved </p>
+       <% else %>
+       <p> pending </p>
+       <% end %>
     </li>
   <% end %>
 </ul>
