@@ -1,11 +1,13 @@
 <div class="nav-bar">
 <% if current_user %>
+<h3 id="welcome">
   Welcome, <%= current_user.username %>
-  <form action = '/sessions' method = 'POST'>
+</h3>
+  <form id="sign-out" action = '/sessions' method = 'POST'>
     <input type = 'hidden' name = '_method' value = 'delete'/>
     <input type = 'submit' value = 'Sign Out'/>
   </form>
-  <ul style="margin:0;">
+  <ul id="menu" style="margin:0;">
     <li><a href='/spaces'>View Spaces</a></li>
     <li><a href='/hosts'>List Space</a></li>
     <li><a href='/users/<%= current_user.username %>'>My Account</a></li>

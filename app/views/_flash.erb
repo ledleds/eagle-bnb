@@ -1,7 +1,7 @@
 <div class="nav-bar">
 <% if flash[:errors] && !flash[:errors].empty? %>
 Sorry, something went wrong! Please refer to the following errors:
-  <ul id='errors'>
+  <ul id='errors' >
   <% flash[:errors].each do |error| %>
   <li> <%= error %></li>
     <% end %>
@@ -9,7 +9,7 @@ Sorry, something went wrong! Please refer to the following errors:
 <% end %>
 
 <% if flash[:notice] %>
-  <div id='notice'>
+  <div id='notice' style="padding-top:20px; padding-left:20px">
     <%= flash[:notice] %>
   </div>
 <% end %>

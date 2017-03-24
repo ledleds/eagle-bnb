@@ -26,23 +26,35 @@
   overflow: auto;
 }*/
 
-wrapper {
-  background-color:green;
+#homepage {
   height:150px;
+  background:url('https://media.giphy.com/media/7gu55dRHjvpJu/giphy.gif') no-repeat top center;
+  background-size:cover;
+
+}
+
+#menu, #menu li, #sign-out {
+  display:inline-block;
+}
+#sign-out {
+  float: right;
+  padding:20px;
+}
+
+#menu li {
+  padding:10px;
 }
 
 body {
-  /*background-color:red;*/
   padding:0;
   margin:0;
-  /*background:url('https://media.giphy.com/media/7gu55dRHjvpJu/giphy.gif') no-repeat top center;
-  background-size:cover;*/
+font-family: 'Roboto Slab', serif;
 }
 
 .nav-bar {
   height:40px;
   /*border-bottom:1px solid #c6c2c5;*/
-  color:red;
+  color:#2a1fa7;
   z-index: 999;
   background-color:white;
 }
@@ -52,6 +64,13 @@ body {
   float:right;
   margin-top:20px; padding: 10px 30px 10px 10px;
   list-style:none;
+}
+
+#welcome {
+  margin:0;
+  display:inline-block;
+  padding-left:20px;
+  padding-top: 20px;
 }
 
 a {
@@ -65,4 +84,14 @@ a {
   padding: 10px;
   color:black;
   text-align:center;
+}
+
+
+footer {
+  background-color: #222;
+  color:white;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:30px;
 }
