@@ -22,6 +22,14 @@ def sign_up_alternative(username: 'susiesmith', name: 'Susie', email: 'susie@smi
   click_button 'Sign Up!'
 end
 
+def sign_in_alternative(username: 'susiesmith', password: 'test')
+  visit '/'
+  click_link 'Sign In'
+  fill_in :username, with: username
+  fill_in :password, with: password
+  click_button 'Sign In!'
+end
+
 def sign_in(username: 'terryeagle', password: 'test')
   visit '/'
   click_link 'Sign In'
@@ -57,7 +65,7 @@ def list_space(title: 'The Crows Nest',
   click_button 'List my space'
 end
 
-def first_user_lisitng
+def first_user_listing
   sign_up
   click_list_space
   list_space
